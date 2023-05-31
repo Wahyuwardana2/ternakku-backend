@@ -17,7 +17,7 @@ def predict():
 
     # generate unique image name
     current_time = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
-    image_name = f"original_image_{current_time}.jpg"
+    image_name = f"image_{current_time}.jpg"
     original_image_path = f"scanned/{image_name}"
     file.save(original_image_path)
 
