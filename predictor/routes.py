@@ -15,15 +15,15 @@ def predict():
     # get image
     file = request.files['image']
 
-    # process image 
-    image = cv2.imdecode(np.frombuffer(file.read(), np.uint8), cv2.IMREAD_COLOR)
-    image = cv2.resize(image, (64, 64)) / 255.0
-
     # generate unique image name
     current_time = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
-    image_name = f"scanned_image_{current_time}.jpg"
-    image_path = f"scanned/{image_name}"
-    cv2.imwrite(image_path, image)
+    image_name = f"original_image_{current_time}.jpg"
+    original_image_path = f"scanned/{image_name}"
+    file.save(original_image_path)
+
+    # load original image for processing
+    image = cv2.imread(original_image_path)
+    image = cv2.resize(image, (64, 64)) / 255.0
 
     # predict
     predicted_class = predict_image(model, image)
@@ -36,11 +36,11 @@ def predict():
         'predicted_class': predicted_class,
         'disease_details': disease_details,
         'handling_method': handling_method,
-        'scanned_image': image_path
+        'original_image': original_image_path
     }
     return jsonify(response)
 
-@predictor_bp.route('/delete', methods=['POST'])
+@predictor_bp.route('/delete', methods=['DELETE'])
 def delete():
     # get image name from request
     image_name = request.json.get('image_name')
@@ -56,3 +56,4 @@ def delete():
         response = {'message': 'Failed to delete the image'}
 
     return jsonify(response)
+
