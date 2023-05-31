@@ -14,16 +14,16 @@ predictor_bp = Blueprint('predictor', __name__)
 def predict():
     # get image
     file = request.files['image']
+     # generate unique image name
+    current_time = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
+    image_name = f"scanned_image_{current_time}.jpg"
+    image_path = f"scanned/{image_name}"
+    cv2.imwrite(image_path, image)
 
     # process image 
     image = cv2.imdecode(np.frombuffer(file.read(), np.uint8), cv2.IMREAD_COLOR)
     image = cv2.resize(image, (64, 64)) / 255.0
 
-    # generate unique image name
-    current_time = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
-    image_name = f"scanned_image_{current_time}.jpg"
-    image_path = f"scanned/{image_name}"
-    cv2.imwrite(image_path, image)
 
     # predict
     predicted_class = predict_image(model, image)
@@ -36,7 +36,7 @@ def predict():
         'predicted_class': predicted_class,
         'disease_details': disease_details,
         'handling_method': handling_method,
-        'image_link': image_path
+        'scanned_image': image_path
     }
     return jsonify(response)
 
