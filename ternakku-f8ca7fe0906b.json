@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "ternakku",
+  "private_key_id": "f8ca7fe0906bf8d91654dccf572789429dc84c32",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDK+zp64XEwtM7y\nzzjYgn94PSKEM6FDdvL/cZ8+j5M7mW+ztH77iTPo16YphYQrHLQkj/bJPFAKUfwi\ncnDU1UAUAqb4aDuvDyaLYAcCKjtVrhacMzQA3waG4qYATsjHxRYgvMs7g7Okr+Nw\nvSZt6kU2IYsOZRgLzvVVpVy7k50B0QcMSIXOc5aIXgBoFlF9TiPiPbaW/Iy/gvzd\nMqogo6vAYWGPmzp+VMOEOlIS3v4tiHfh+R3YBy7HQyRikdCI/YUzB9rHmmbhgj4q\nwoaS3oCtcBKbx9aGC9QfGVsaLDl4iMI8oRx8i0/bSgRCEu3DTp2Mqs14sKPGQHnh\n++zHFPjTAgMBAAECggEAVKRTfAdDXIShIYZA1aQBRKH1oTwoXIofBV8bgQp84mb2\nufCj3P8XKtq2Gu1mslWbVv3DcqHYXJ1YbwLawx2TxWRfvQk2DidastbdxUzYBj/8\nhLEjV9OolJmxkEJKHme0dP1VICGoyR1hUdNGUaJVrx9orZ2BW/c2vbqhg0SoPadu\nccP+r+c0OjnZ5mipO0y7dasFG6UNuftzFlpASgK/nC/SCRm/yFthzNrfBidm9cEN\nT8SFp66CV9kx1hIgoG5TC32u9kARxCO5Lal9fcGP24LdOpTcE/hvy2vJUVu7lZbR\nNqX3aRmV0LL6XZoi207kbhxqlnrQ5ssBbywHG1lFqQKBgQDy7Y09Z2wqOqb2g5zU\ntxJctl6W5vEuORmGAH8xY0DA2XRLVIH4L5rcnhbrQWOy9ZwgSf4FQRAlJ7VE3NJF\n8RjEf2UQ7wYN1uEZbut5bKep4XcQo3mR9Kr+lSUvC6l+V3Y5svVyT7e2rYO/dItX\n4mvvLF28a96LQ9nfBlMP1oALuwKBgQDV52TBbU0zTr/WlsBzHLSQoBNjIKUiKRTx\n/sWveMFGf4hqs/9t3/QuMWBj0zvphL79HohaqVoUfavq7fnk+adCi+bGCx3tpByN\ngqsmKubzrRX/db/6gotvYgFayP+jTMcGEUJHmtfjtDzXk7HRu5FSdRuTgMSX9UCE\n6Ia4dYuZyQKBgQCgTCpP42fXcb5smiopnufp75j5AEkTVDBIYRmNEE5RMuxvLMNa\nbqdEfrjm4c4U78bm84xAEU/DBLGzT/ccmdvbBak+BEs9ZJZCfxO4mv8DtTgo7YYx\nzn3q4aWYppxgNvxXVIRruriiPVrbQd8Uzd6lAuSTiaZexRYF+ZljsQnrMwKBgGd6\nQSuxjJ89gWB2HTOSt2cfiUFzEW+tIAzRiyCP8jAAkiXMXczxgla2XELudRVKunoI\nwz3Yn1M6WGiWJ0W14Ew5EbLMvfWwZn+urs0QBBntqa6jb/PoIzwG1VDt231MLxuo\nTcAGEFp/Xs+LC4LCklKphGWe7Xv1kPi65DFn69jBAoGAWKCRtIZirISiKG2M/bmD\nVMDgojUQvQb+8fqzEgY8/LYSFOGX/Q3UTusCjlVEfmEpIyfEZnbghKoOwdVgM84q\nK1pbG8O291C3sf9LHjKiqXtOBupMHoz5uhzwYyC5Usz6dyCi9MtKL5B+nbmRsYR3\n8cv4tcziRjlYoSs3o+vLSqw=\n-----END PRIVATE KEY-----\n",
+  "client_email": "storage-admin-ternakku@ternakku.iam.gserviceaccount.com",
+  "client_id": "108834864872091769468",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/storage-admin-ternakku%40ternakku.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

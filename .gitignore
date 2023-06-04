@@ -1,3 +1,8 @@
 __pycache__/
 app.yaml
 Dockerfile
+test.py
+.venv/
+venv/
+ternakku-f8ca7fe0906b.json
+wsgi.py

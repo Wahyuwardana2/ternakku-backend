@@ -8,7 +8,7 @@ def details(disease_name):
     disease_details, handling_method = get_disease_details(disease_name)
 
     response = {
-        'predicted_class': disease_name,
+        'disease_name': disease_name,
         'disease_details': disease_details,
         'handling_method': handling_method
     }

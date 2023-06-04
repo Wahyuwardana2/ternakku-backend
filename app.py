@@ -9,8 +9,8 @@ app.register_blueprint(disease_details_bp)
 
 @app.route('/')
 def hello():
-    return "Sucess, ready to use"
+    return "<h1>Success, API ready to use</h1>"
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run()
+
