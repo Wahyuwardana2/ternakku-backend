@@ -1,7 +1,6 @@
 from flask import Blueprint, jsonify
-from disease_details.details import get_disease_details
-
-disease_details_bp = Blueprint('disease_details', __name__)
+from . import get_disease_details
+from . import disease_details_bp
 
 @disease_details_bp.route('/details/<disease_name>', methods=['GET'])
 def details(disease_name):

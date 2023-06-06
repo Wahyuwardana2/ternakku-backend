@@ -4,10 +4,13 @@ import numpy as np
 from tensorflow.keras.models import load_model
 import os
 import datetime
-from predictor.predictor import predict_image
-from model.model import model
-from disease_details.details import get_disease_details
+from . import predict_image
+from . import predictor_bp
+from authentication import authenticate_token
+from model import model
+from disease_details import get_disease_details
 from google.cloud import storage
+import jwt, requests
 
 
 # Dapatkan path ke file kunci akses layanan
@@ -18,9 +21,8 @@ storage_client = storage.Client.from_service_account_json(key_path)
 
 bucket_name = 'ternakku-predict-backend'
 
-predictor_bp = Blueprint('predictor', __name__)
-
 @predictor_bp.route('/predict', methods=['POST'])
+@authenticate_token
 def predict():
     # get image
     file = request.files['image']

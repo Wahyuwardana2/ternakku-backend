@@ -8,4 +8,6 @@ matplotlib
 flask
 google-cloud-storage
 gunicorn
-waitress
+firebase-admin
+requests
+pymysql
